@@ -1,3 +1,5 @@
+package elecciones.solucionB;
+
 class Ejemplo {
     public static void main(String[] args) {
 
@@ -24,19 +26,19 @@ class Ejemplo {
         viewLine("CANDIDATOS", candidatos);
 
         Pizarra pizarra = new Pizarra(candidatos);
-        Queue urna = new Queue();
+        Stack monton = new Stack();
 
-        votar(urna, presentes, "Juanito", "Anita");
-        votar(urna, presentes, "Pepito", "Pepito");
-        votar(urna, presentes, "Anita", "Anita");
-        votar(urna, presentes, "Marta", "");
-        votar(urna, presentes, "Rosa", "Anita");
-        votar(urna, presentes, "Carlos", "Batman");
-        votar(urna, presentes, "Luisito", "Anita");
+        votar(monton, presentes, "Juanito", "Anita");
+        votar(monton, presentes, "Pepito", "Pepito");
+        votar(monton, presentes, "Anita", "Anita");
+        votar(monton, presentes, "Marta", "");
+        votar(monton, presentes, "Rosa", "Anita");
+        votar(monton, presentes, "Carlos", "Batman");
+        votar(monton, presentes, "Luisito", "Anita");
 
-        System.out.println("Las papeletas se leen en el orden en que se recogieron");
-        while (!urna.isEmpty()) {
-            String voto = urna.dequeue();
+        System.out.println("Las papeletas se leen empezando por la de encima del montón");
+        while (!monton.isEmpty()) {
+            String voto = monton.pop();
             System.out.println("Secretario: " + (voto.isEmpty() ? "en blanco" : voto));
             pizarra.anotar(voto);
         }
@@ -53,9 +55,9 @@ class Ejemplo {
         }
     }
 
-    static void votar(Queue urna, List presentes, String alumno, String papeleta) {
+    static void votar(Stack monton, List presentes, String alumno, String papeleta) {
         if (presentes.contains(alumno)) {
-            urna.enqueue(papeleta);
+            monton.push(papeleta);
         } else {
             System.out.println("Papeleta rechazada: " + alumno + " no consta como presente");
         }

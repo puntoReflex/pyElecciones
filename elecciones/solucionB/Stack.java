@@ -1,3 +1,5 @@
+package elecciones.solucionB;
+
 public class Stack {
 
     private Node top = null;

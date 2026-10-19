@@ -2,7 +2,7 @@
 
 ## Enunciado
 
-Se elige delegado de aula. Asisten alumnos a clase. De entre ellos se proponen candidatos y después el profesor elige un secretario. El profesor es el presidente: abre y cierra la votación, recoge las papeletas, anota el recuento en la pizarra y proclama el resultado. El secretario toma las papeletas una a una y canta cada voto en voz alta. El presidente escribe en la pizarra el nombre de cada candidato y añade un palito en su columna por cada voto cantado. Cada alumno vota una vez en papel.
+Se elige delegado de aula. Asisten alumnos a clase. Durante el proceso llegan alumnos tarde y otros se marchan; solo pueden proponerse y votar quienes están presentes en ese momento. De entre los presentes se proponen candidatos. Mientras el plazo de candidaturas está abierto, un candidato puede retirarse y pueden proponerse otros; al cerrar el plazo, los candidatos quedan fijados. Después el profesor elige un secretario. El profesor es el presidente: abre y cierra la votación, recoge las papeletas, anota el recuento en la pizarra y proclama el resultado. Cada alumno vota una vez en papel. El presidente deja las papeletas recogidas una sobre otra, formando un montón. El secretario toma las papeletas una a una y canta cada voto en voz alta. Una papeleta sin nombre cuenta como voto en blanco y una con un nombre que no es candidato cuenta como nulo. El presidente escribe en la pizarra el nombre de cada candidato, más las opciones en blanco y nulo, y añade un palito en su columna por cada voto cantado. Si se equivoca al anotar, borra el palito.
 
 Indique qué estructura de datos (array, lista, pila o cola) emplearía para cada dato del proceso. Para cada dato, indique la estructura elegida, la propiedad que la justifica, la alternativa que descarta y la limitación que asume.
 
@@ -19,13 +19,13 @@ Indique qué estructura de datos (array, lista, pila o cola) emplearía para cad
 
 <div align=center>
 
-|Implementación: [solucionA](solucionA/)||
+|Implementación: [solucionA](elecciones/solucionA/)||
 |-|-|
-|[Ejemplo.java](solucionA/Ejemplo.java)|Desarrollo del proceso: presentes, candidaturas, votación, lectura y proclamación|
-|[Queue.java](solucionA/Queue.java)|Papeletas pendientes de lectura|
-|[Pizarra.java](solucionA/Pizarra.java)|Arrays paralelos de nombres y votos|
-|[List.java](solucionA/List.java)|Presentes y candidaturas|
-|[Node.java](solucionA/Node.java)|Nodo de la lista y de la cola|
+|[Ejemplo.java](elecciones/solucionA/Ejemplo.java)|Desarrollo del proceso: presentes, candidaturas, votación, lectura y proclamación|
+|[Queue.java](elecciones/solucionA/Queue.java)|Papeletas pendientes de lectura|
+|[Pizarra.java](elecciones/solucionA/Pizarra.java)|Arrays paralelos de nombres y votos|
+|[List.java](elecciones/solucionA/List.java)|Presentes y candidaturas|
+|[Node.java](elecciones/solucionA/Node.java)|Nodo de la lista y de la cola|
 
 </div>
 
@@ -42,19 +42,19 @@ Indique qué estructura de datos (array, lista, pila o cola) emplearía para cad
 
 <div align=center>
 
-|Implementación: [solucionB](solucionB/)||
+|Implementación: [solucionB](elecciones/solucionB/)||
 |-|-|
-|[Ejemplo.java](solucionB/Ejemplo.java)|Desarrollo del proceso: presentes, candidaturas, votación, lectura y proclamación|
-|[Stack.java](solucionB/Stack.java)|Papeletas pendientes de lectura|
-|[Pizarra.java](solucionB/Pizarra.java)|Arrays paralelos de nombres y votos|
-|[List.java](solucionB/List.java)|Presentes y candidaturas|
-|[Node.java](solucionB/Node.java)|Nodo de la lista y de la pila|
+|[Ejemplo.java](elecciones/solucionB/Ejemplo.java)|Desarrollo del proceso: presentes, candidaturas, votación, lectura y proclamación|
+|[Stack.java](elecciones/solucionB/Stack.java)|Papeletas pendientes de lectura|
+|[Pizarra.java](elecciones/solucionB/Pizarra.java)|Arrays paralelos de nombres y votos|
+|[List.java](elecciones/solucionB/List.java)|Presentes y candidaturas|
+|[Node.java](elecciones/solucionB/Node.java)|Nodo de la lista y de la pila|
 
 </div>
 
 ## Ejecución
 
-Desde la carpeta que contiene `elecciones`:
+Desde la raíz del repositorio:
 
 ```
 javac -encoding UTF-8 elecciones/solucionA/*.java

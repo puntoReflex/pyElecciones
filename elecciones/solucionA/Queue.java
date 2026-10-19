@@ -1,3 +1,5 @@
+package elecciones.solucionA;
+
 public class Queue {
 
     private Node first = null;

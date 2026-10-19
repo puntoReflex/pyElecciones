@@ -1,3 +1,5 @@
+package elecciones.solucionB;
+
 public class Pizarra {
 
     private static final String EN_BLANCO = "En blanco";

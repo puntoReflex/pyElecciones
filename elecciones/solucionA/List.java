@@ -1,3 +1,5 @@
+package elecciones.solucionA;
+
 public class List {
 
     private Node first = null;

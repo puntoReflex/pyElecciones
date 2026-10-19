@@ -1,3 +1,5 @@
+package elecciones.solucionA;
+
 public class Node {
 
     private String value;
